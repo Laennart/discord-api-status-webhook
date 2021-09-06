@@ -39,4 +39,10 @@ Before you can start using the webhook you have to create a `config.json` file i
 ```
 
 ## Run it!
-Now we can start the webhook by typing `npm run start` into the terminal. For future use you could set up a script to run the webhook periodically (e.g. with chron).
+Now we can start the webhook by typing the following into the terminal:
+```shell
+npm install
+npm run start
+```
+
+For future use you could set up a script to run the webhook periodically (e.g. with chron).
