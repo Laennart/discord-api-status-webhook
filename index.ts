@@ -3,7 +3,7 @@ import * as fs from "fs";
 import {ColorResolvable, DiscordAPIError, MessageEmbed, WebhookClient} from "discord.js";
 import {time} from "@discordjs/builders";
 
-const config = require("config");
+import * as config from "./config.json";
 const _ = require("lodash");
 
 const apiUrl = "https://discordstatus.com/api/v2/incidents.json";

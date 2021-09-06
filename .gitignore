@@ -1,6 +1,7 @@
 node_modules/
 package-lock.json
 config/
+config.json
 messages.json
 
 # Created by https://www.toptal.com/developers/gitignore/api/webstorm+all
