@@ -1,11 +1,11 @@
 # Discord API Status Webhook
 
 ### Table of Contents
-1. [Introduction](#Introduction)
-2. [Getting started](#Getting started)
-3. [Creating a webhook](#Creating a webhook)
-4. [Configuration](#Configuration)
-5. [Run it!](#Run it!)
+1. [Introduction](#introduction)
+2. [Getting started](#getting-started)
+3. [Creating a webhook](#creating-a-webhook)
+4. [Configuration](#configuration)
+5. [Run it!](#run-it)
 
 ## Introduction
 This project uses the [discord.js](https://github.com/discordjs/discord.js) library to create a webhook which can display past and current status-changes of the official Discord API.
@@ -27,7 +27,7 @@ cd discord-api-status-webhook/
 ![channel-settings](assets/channel-settings.png)
 3. Click on "Create Webhook", give it a name and save your changes.
 ![create-webhook](assets/create-webhook.png)
-4. Copy the Webhook URL into the [config](#Configuration) file.
+4. Copy the Webhook URL into the [config](#configuration) file.
 
 ## Configuration
 Before you can start using the webhook you have to create a `config.json` file in the root directory of the project. Now paste your Webhook URL into the config file.
