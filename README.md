@@ -45,4 +45,4 @@ npm install
 npm run start
 ```
 
-For future use you could set up a script to run the webhook periodically (e.g. with chron).
+For future use you could set up a script to run the webhook periodically (e.g. with cron).
