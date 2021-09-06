@@ -9,7 +9,7 @@ const _ = require("lodash");
 const apiUrl = "https://discordstatus.com/api/v2/incidents.json";
 const fileName = "./messages.json";
 
-const webhookClient = new WebhookClient({id: config.id, token: config.token});
+const webhookClient = new WebhookClient({url: config.url});
 const ignoreTime = (config["ignoreDays"]??30) * 86400000;
 console.log(`Ignoring incidents from ${config["ignoreDays"]??30} days ago (${ignoreTime} ms).`);
 
