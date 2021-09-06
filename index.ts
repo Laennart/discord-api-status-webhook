@@ -10,6 +10,8 @@ const apiUrl = "https://discordstatus.com/api/v2/incidents.json";
 const fileName = "./messages.json";
 
 const webhookClient = new WebhookClient({id: config.id, token: config.token});
+const ignoreTime = (config["ignoreDays"]??30) * 86400000;
+console.log(`Ignoring incidents from ${config["ignoreDays"]??30} days ago (${ignoreTime} ms).`);
 
 async function checkFile() {
     if (fs.existsSync(fileName)) return;
@@ -24,7 +26,8 @@ async function readJsonFile() {
 async function checkIncident(incident: any) {
     let id = incident.id;
     const incidentUpdate = Date.parse(incident.updated_at);
-    if (Date.now() - incidentUpdate > 5184000000) {
+
+    if (Date.now() - incidentUpdate > ignoreTime) {
         console.debug(`Skipping update of incident ${id} because it's too old.`);
         return;
     }
