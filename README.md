@@ -12,6 +12,7 @@ This project uses the [discord.js](https://github.com/discordjs/discord.js) libr
 The information is taken from [discordstatus.com](https://discordstatus.com/), the official Discord API's status page.
 
 The resulting messages look like this:
+
 ![result](assets/result.png)
 
 ## Getting started
